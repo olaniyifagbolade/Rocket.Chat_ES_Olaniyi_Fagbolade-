@@ -1,1 +1,16 @@
 
+Create a new user via an API endpoint code
+Step one: login and copy the IserID and AitToken
+curl http://localhost:3000/api/v1/login \
+     -d "user=olaniyi.fagbolade&password=Sharon@123"
+
+NSc3bqWnTj99r9FpX - userID
+aqNc6AhYcCWkHdT4rh9AlPJBsnlQdJhm_zvGXRxBo0f - AuthToken
+
+Step two: Paste the AuthToken and UserID and add the user you want to add 
+
+curl -H "X-Auth-Token: aqNc6AhYcCWkHdT4rh9AlPJBsnlQdJhm_zvGXRxBo0f" \
+     -H "X-User-Id: NSc3bqWnTj99r9FpX" \
+     -H "Content-type:application/json" \
+     http://localhost:3000/api/v1/users.create \
+     -d '{"name": "linux", "email": "linuxadikpe@gmail.com", "password": "Password123", "username": "linux"}
