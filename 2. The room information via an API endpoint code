@@ -1,1 +1,11 @@
 
+Create 2. The room information via an API endpoint code
+
+curl -H "X-Auth-Token: 84TDoKYiQVrv36jQTAM8Iqr3E2WUG_e36PvvARIDTTI" \
+     -H "X-User-Id: NSc3bqWnTj99r9FpX" \
+     -H "Content-type: application/json" \
+     http://localhost:3000/api/v1/rooms.get
+
+curl -H "X-Auth-Token: 84TDoKYiQVrv36jQTAM8Iqr3E2WUG_e36PvvARIDTTI" \
+     -H "X-User-Id: NSc3bqWnTj99r9FpX" \
+     http://localhost:3000/api/v1/rooms.info?roomId=GENERAL
