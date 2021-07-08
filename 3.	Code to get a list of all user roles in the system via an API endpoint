@@ -1,1 +1,9 @@
 
+Create 3. Code to get a list of all user roles in the system via an 
+
+authToken":"t8GT6TAyt82BYRpZjiG3X6XryBzIaECau40sNH4DIwp",
+"userId":"NSc3bqWnTj99r9FpX"
+
+curl -H "X-Auth-Token: t8GT6TAyt82BYRpZjiG3X6XryBzIaECau40sNH4DIwp" \
+     -H "X-User-Id: NSc3bqWnTj99r9FpX" \
+     http://localhost:3000/api/v1/users.list
